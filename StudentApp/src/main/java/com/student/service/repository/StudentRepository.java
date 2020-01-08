@@ -16,7 +16,7 @@ import com.student.service.model.Student;
 public class StudentRepository {
 
 	final String queryForFindById = "select * from Address where id=?";
-	final static String queryForFindAll = "select * from Student";
+	final String queryForFindAll = "select * from Student";
 	final String INSERT_QUERY = "insert into student (firstName, lastName,fatherName,motherName) values (?, ?,?,?)";
 	final String UPDATE_QUERY = "update student set fathername = ? where mothername = ?";
 	final String DELETE_QUERY = "delete from student where  firstname= ?";
