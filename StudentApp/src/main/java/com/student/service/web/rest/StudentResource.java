@@ -32,14 +32,14 @@ public class StudentResource {
 		return new ResponseEntity<>(repository.saveStudent(student), HttpStatus.OK);
 	}
 	
-	@PutMapping
+	@PutMapping("/student/update")
 	public ResponseEntity<String> updateStudent(Student student) throws Exception{
 		
 		repository.update(student);
 		return new ResponseEntity<>("Updatation completed successfully",HttpStatus.OK);
 	}
 	
-	@DeleteMapping
+	@DeleteMapping("/student/delete")
 	public ResponseEntity<String> deleteStudent(Student student) throws Exception{
 		
 		repository.deleteEmpById(student.getFirstName());
