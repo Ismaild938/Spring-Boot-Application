@@ -43,7 +43,7 @@ public class StudentResource {
 	public ResponseEntity<String> deleteStudent(Student student) throws Exception{
 		
 		repository.deleteEmpById(student.getFirstName());
-		return new ResponseEntity<String>("Deletion completed sussefully ",HttpStatus.OK);
+		return new ResponseEntity<>("Deletion completed sussefully ",HttpStatus.OK);
 	}
 
 }
